@@ -1,0 +1,70 @@
+/* Base styles that adapt to theme variables */
+.stApp {
+    background-color: var(--background) !important;
+    color: var(--text) !important;
+}
+
+/* Text elements */
+h1, h2, h3, h4, h5, h6, p, .text-content {
+    color: var(--text) !important;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: var(--secondary-background) !important;
+    border-right: 1px solid var(--border);
+}
+
+/* Cards and containers */
+.stMetric, .stAlert, .stExpander {
+    background-color: var(--secondary-background) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text) !important;
+}
+
+/* Buttons */
+.stButton>button {
+    background-color: var(--primary) !important;
+    color: white !important;
+    border: none !important;
+}
+
+.stButton>button:hover {
+    opacity: 0.9;
+}
+
+/* Input widgets */
+.stTextInput>div>div>input, 
+.stSelectbox>div>div>select,
+.stNumberInput>div>div>input {
+    background-color: var(--secondary-background) !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    border-bottom: 1px solid var(--border) !important;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background: var(--secondary-background) !important;
+    color: var(--text) !important;
+}
+
+.stTabs [aria-selected="true"] {
+    background: var(--primary) !important;
+    color: white !important;
+}
+
+/* Dark mode specific adjustments */
+[data-theme="dark"] .stImage>img {
+    border: 2px solid var(--border);
+    border-radius: 8px;
+}
+
+/* Light mode specific adjustments */
+[data-theme="light"] .stImage>img {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
